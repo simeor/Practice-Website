@@ -33,7 +33,10 @@
     </nav>
 
 
+
+
     <!-- showcase-->
+    <!--------- Section A---------->
 
     <section class="section-a">
         <div class="container" data-aos="fade-down">
@@ -57,6 +60,11 @@
     </section>
 
 
+
+
+    <!--Image And Text Block -->
+    <!--------- Section B---------->
+
     <section class="section-b">
         <div class="section-b-inner">
             <h3>Lorem ipsum dolor sit.</h3>
@@ -68,11 +76,13 @@
     </section>
 
 
+    <!-- Cards-->
+    <!--------- Section C---------->
     <div class="container">
         <div class="section-c">
 
             <div>
-                <i class="fas fa-code icon-3x"data-aos="fade-down"></i>
+                <i class="fas fa-code icon-3x" data-aos="fade-down"></i>
                 <h4>Responsive Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae suscipit non sequi, magnam aspernatur, alias, ipsam ipsum iste nobis debitis adipisci amet! Vitae, beatae, error.</p>
                 <br>
@@ -80,7 +90,7 @@
             </div>
 
             <div>
-                <i class="fas fa-layer-group icon-3x"data-aos="fade-down"></i>
+                <i class="fas fa-layer-group icon-3x" data-aos="fade-down"></i>
                 <h4>Front-End and Back-End</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae suscipit non sequi, magnam aspernatur, alias, ipsam ipsum iste nobis debitis adipisci amet! Vitae, beatae, error.</p>
 
@@ -88,14 +98,14 @@
 
 
             <div>
-                <i class="far fa-address-card"data-aos="fade-down"></i>
+                <i class="far fa-address-card" data-aos="fade-down"></i>
                 <h4>Front-End and Back-End</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae suscipit non sequi, magnam aspernatur, alias, ipsam ipsum iste nobis debitis adipisci amet! Vitae, beatae, error.</p>
 
             </div>
 
             <div>
-                <i class="fas fa-code-branch"data-aos="fade-down"></i>
+                <i class="fas fa-code-branch" data-aos="fade-down"></i>
                 <h4>Responsive Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae suscipit non sequi, magnam aspernatur, alias, ipsam ipsum iste nobis debitis adipisci amet! Vitae, beatae, error.</p>
 
@@ -110,6 +120,73 @@
 
         </div>
     </div>
+
+
+
+    <!-- Slide-->
+    <!--------- Section D---------->
+
+    <div class="container">
+
+        <div class="fbcontainer" id="container">
+            <div class="form-container back-end-container">
+                <form action="#">
+                    <h1>Back-End-Delopment</h1>
+                    <ul class="btn-list">
+                        <li><a href="">LoremLorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                    </ul>
+
+                </form>
+            </div>
+            <div class="form-container front-end-container">
+                <form action="#">
+                    <h1>Front-end Delopment</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus alias earum maxime quasi, obcaecati veniam consequuntur dolores fugit quaerat vitae!</p>
+                    <ul class="btn-list">
+                        <li><a href="">LoremLorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                    </ul>
+
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Front-End</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, sed!</p>
+
+
+                        <button class="ghost" id="backEnd">Back Up The rabbit Hole</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Back End devlopment</h1>
+                        <button class="ghost" id="frontEnd">look behind the curtain</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
     <section class="tabs">
         <div class="container">
             <div id="tab-1" class="tab-item tab-border">
@@ -214,6 +291,22 @@
             document.getElementById('tab-1-content').style.display = 'none';
             document.getElementById('tab-2-content').style.display = 'none';
         })
+
+
+
+        // Java for Slide / section-D
+
+        const frontEndButton = document.getElementById('frontEnd');
+        const backEndButton = document.getElementById('backEnd');
+        const container = document.getElementById('container');
+
+        frontEndButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        backEndButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
 
     </script>
 
