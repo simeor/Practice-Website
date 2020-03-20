@@ -18,6 +18,7 @@ body {
     line-height: 1.6;
     color: #333;
     font-size: 1.1rem;
+    background-color: #fff;
 
 }
 
@@ -131,7 +132,7 @@ img {
 }
 
 
-
+/*----- Section-a -----*/
 
 .section-a {
     margin-top: 30px;
@@ -281,10 +282,26 @@ section-a p {
 }
 
 .section-c i {
-    color: #1BA8ED;
     font-size: 30px;
     margin-bottom: 10px;
 }
+
+.icon-1,
+.icon-4{
+  color: #1BA8ED; 797ef6   
+}
+
+
+.icon-2 {
+  color: #797ef6;#4ADEDE  
+}
+
+.icon-3 {
+  color: #4ADEDE;  
+}
+
+
+
 
 .section-c div {
     width: 80%;
@@ -560,30 +577,53 @@ input {
 }
 
 
+
 .tabs {
-    background: rgb(33, 188, 236);
-    background: linear-gradient(90deg, rgba(33, 188, 236, 1) 0%, rgba(26, 159, 228, 1) 100%);
-    border-radius: 30px;
+   
     width: 90%;
-    margin: auto;
-    box-shadow: 5px 10px 18px #888888;
+    margin: 0 auto 20px auto;
+    height: 100%;
+   
 }
+
+.tab-item{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 8px 15px #888888;
+    height: 100px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+ 
+    
+}
+
+.tab-content-item img{
+  width: 100%;
+   
+}
+
+
+
 
 .tab-content-item {
     min-height: 300px;
+    height: 60vh;
 
 }
 
-.tab-item:hover {
-    cursor: pointer;
-}
 
 
-tabs {
-    background: #141414;
+
+.tabs {
+   
     padding-top: 1em;
-    padding: 1.5rem 0;
-    margin-top: 10px;
+    padding: 1rem 0;
+   
 
 
 
@@ -596,8 +636,7 @@ tabs {
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
+   
 
 
 }
@@ -605,13 +644,34 @@ tabs {
 .tab-border {
     border-bottom: solid 4px red;
     border-radius: 3px;
-    width: 80%;
+    width: 85%;
+}
+
+#tab-1 {
+   background-color: #28BDE9; 
+}
+
+#tab-2 {
+   background-color: #4ADEDE; 
 }
 
 
-.tab-item:hover {
-    color: white;
+#tab-3 {
+   background-color: #797EF6; 
 }
+
+#tab-1,
+#tab-2,
+#tab-3 :hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+
+
+
+
 
 
 .container {
@@ -621,11 +681,13 @@ tabs {
     padding: 0 1rem;
 }
 
-#tab-1-content,
+
 #tab-2-content,
 #tab-3-content {
     display: none;
 }
+
+
 
 
 
