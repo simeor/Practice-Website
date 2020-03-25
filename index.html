@@ -193,7 +193,7 @@
 
 
                 <div id="tab-2" class="tab-item ">
-                   <i class="fas fa-cubes"></i>
+                    <i class="fas fa-cubes"></i>
                     <p class="hide-sm">Watch anywhre</p>
 
                 </div>
@@ -271,101 +271,106 @@
                         Also your contact details?
                     </div>
                 </div>
+
+
                 <div class="mine messages" data-aos="fade-up">
                     <div class="message">
-                        sure!
+                        <a href="mailto:simeo94@hotmail.com">My email is: simeo94@hotmail.com</a>
                     </div>
-
-                    <div class="mine messages" data-aos="fade-up">
-                        <div class="message">
-                            My email is: simeo94@hotmail.com
-                        </div>
-                        <div class="message last" data-aos="fade-up">
-                            <a target="_blank" href="https://github.com/simeor"><i class="fab fa-github icon-3x"></i></a>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="yours messages">
                     <div class="message last" data-aos="fade-up">
-                        Thanks <p>&#128512;</p>
+                        <a target="_blank" href="https://github.com/simeor"><i class="fab fa-github icon-3x"></i></a>
                     </div>
+
                 </div>
+
 
             </div>
+            <div class="yours messages">
+                <div class="message last" data-aos="fade-up">
+                    Thanks <p>&#128512;</p>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <P>© 2020 Simeo Russo | images via PNGtree
+            </P>
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-</div>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-        </script>
-        <script>
-            AOS.init({
-                offset: 400,
-                duration: 1800
-            });
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1800
+        });
 
 
-            // tabs code
-            //create var,s to dry code..
+        // Tabs code
 
-            document.getElementById('tab-1-content').style.display = 'block';
+        var domTab1 = document.getElementById('tab-1-content');
+        var domTab2 = document.getElementById('tab-2-content');
+        var domTab3 = document.getElementById('tab-3-content');
 
-            document.getElementById('tab-1').addEventListener('click', function() {
-                document.getElementById('tab-1-content').style.display = 'block';
-                document.getElementById('tab-2-content').style.display = 'none';
-                document.getElementById('tab-3-content').style.display = 'none';
-            })
+        domTab1.style.display = 'block';
 
-            document.getElementById('tab-2').addEventListener('click', function() {
-                document.getElementById('tab-2-content').style.display = 'block';
-                document.getElementById('tab-1-content').style.display = 'none';
-                document.getElementById('tab-3-content').style.display = 'none';
-            })
+        document.getElementById('tab-1').addEventListener('click', function() {
+            domTab1.style.display = 'block';
+            domTab2.style.display = 'none';
+            domTab3.style.display = 'none';
+        })
 
-            document.getElementById('tab-3').addEventListener('click', function() {
-                document.getElementById('tab-3-content').style.display = 'block';
-                document.getElementById('tab-1-content').style.display = 'none';
-                document.getElementById('tab-2-content').style.display = 'none';
-            })
+        document.getElementById('tab-2').addEventListener('click', function() {
+            domTab2.style.display = 'block';
+            domTab1.style.display = 'none';
+            domTab3.style.display = 'none';
+        })
+
+        document.getElementById('tab-3').addEventListener('click', function() {
+            domTab3.style.display = 'block';
+            domTab1.style.display = 'none';
+            domTab2.style.display = 'none';
+        })
 
 
 
-            // Java for Slide / section-D
+        // Java for Slide / section-D
 
-            const frontEndButton = document.getElementById('frontEnd');
-            const backEndButton = document.getElementById('backEnd');
-            const container = document.getElementById('container');
+        const frontEndButton = document.getElementById('frontEnd');
+        const backEndButton = document.getElementById('backEnd');
+        const container = document.getElementById('container');
 
-            frontEndButton.addEventListener('click', () => {
-                container.classList.add("right-panel-active");
-            });
+        frontEndButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
 
-            backEndButton.addEventListener('click', () => {
-                container.classList.remove("right-panel-active");
-            });
+        backEndButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
 
-        </script>
+    </script>
 
 </body>
 
