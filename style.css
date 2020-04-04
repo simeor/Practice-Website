@@ -22,6 +22,11 @@ body {
 
 }
 
+span h1 {
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
@@ -55,12 +60,17 @@ img {
 }
 
 
+
+/*----- Navigation -----*/
+
 .navbar {
     font-size: 1.1rem;
     padding: 1rem 0.7rem;
     position: relative;
-     background-color: #dcf2fc;
-   
+    background-color: #d5fefd;
+background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+
+
 
 }
 
@@ -103,7 +113,7 @@ img {
     border-radius: 30px;
     opacity: 0.9;
     color: white;
-   
+
 
 }
 
@@ -131,18 +141,16 @@ img {
 /*----- Section-a -----*/
 
 .section-a {
-   
-    height: 60vh;
+
+    height: 80vh;
     width: 100%;
-    height: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
     display: flex;
     text-align: center;
-    background-color: #dcf2fc
-
-
+   background-color: #d5fefd;
+background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
 }
 
 .section-a .container {
@@ -287,7 +295,7 @@ section-a p {
 .icon-1,
 .icon-4 {
     color: #1BA8ED;
-    797ef6
+   
 }
 
 
@@ -326,7 +334,8 @@ section-a p {
     margin-bottom: 50px;
     z-index: 4;
     position: relative;
-    height: 55vh;
+    height: 65vh;
+    padding-top: 150px;
 
 
 
@@ -344,7 +353,7 @@ section-a p {
 
 .spacer {
     margin-bottom: 150px;
-    padding-bottom: 30px;
+    padding-bottom: 79px;
 }
 
 
@@ -353,8 +362,10 @@ section-a p {
 
 /* ----------Section-D -----------*/
 
+
+
 .fbcontainer {
-    margin: 0 auto 15em auto;
+    margin: 10px auto 15em auto;
 }
 
 .btn-list ul {
@@ -365,7 +376,8 @@ section-a p {
 
 .btn-list li {
     padding: 5px 10px;
-    background-color: #4ADEDE;
+     background-color: #f6fba2;
+    background-image: linear-gradient(315deg, #f6fba2 0%, #20ded3 74%);
     border-radius: 30px;
     margin: 2px 2px;
     display: inline-block;
@@ -393,6 +405,90 @@ button {
 }
 
 
+.heartbeat {
+    -webkit-animation: heartbeat 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+    animation: heartbeat 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+}
+
+
+* animation heartbeat * ---------------------------------------- */ @-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
 button:hover {
     cursor: pointer;
     border-bottom-right-radius: 10px;
@@ -400,6 +496,9 @@ button:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05);
 }
 
+
+* animation heartbeat End 
+* --------------------END-------------------- */ 
 
 
 button:focus {
@@ -516,8 +615,8 @@ input {
 }
 
 .overlay {
-    background: #1BA8ED;
-
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -564,6 +663,8 @@ input {
 
 .fbcontainer.right-panel-active .overlay-right {
     transform: translateX(20%);
+    
+
 }
 
 
@@ -655,16 +756,23 @@ input {
 }
 
 #tab-1 {
-    background-color: #28BDE9;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
 }
 
 #tab-2 {
-    background-color: #4ADEDE;
+    background-color: #f6fba2;
+    background-image: linear-gradient(315deg, #f6fba2 0%, #20ded3 74%);
+
+
 }
 
 
 #tab-3 {
-    background-color: #797EF6;
+    background-color: #96c8fb;
+    background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+
+
 }
 
 
@@ -847,7 +955,8 @@ input {
 /*------Footer-------- */
 
 footer {
-    background-color: #1a9edb;
+     background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #83eaf1 0%, #63a4ff 74%);
     height: 100px;
     width: 100%;
     color: white;
@@ -917,16 +1026,42 @@ footer p {
 
 @media(max-width: 770px) {
 
+    .navbar {
+        display: none;
+    }
+
+    .section-a {
+        width: 100%;
+    }
+
+    .section-a-inner {
+        padding-left: 100px;
+    }
+
     .section-a .container {
         margin-bottom: 0px;
         padding-bottom: 0px;
+
     }
-    
+
     .section-c {
         height: 100%;
     }
+
+
+    .container .section-c {
+        grid-gap: 110px;
+    }
+
     
-   
+
+.spacer {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+
+
 
 }
 
@@ -943,7 +1078,7 @@ footer p {
 @media(max-width: 760px) {
     .section-a .container {
         text-align: center;
-        margin:  0 auto;
+        margin: 0 auto;
 
 
     }
@@ -953,6 +1088,11 @@ footer p {
         justify-content: center;
         text-align: center;
         align-content: center;
+    }
+
+
+    .section-a-inner {
+        padding-left: 0;
     }
 
 
@@ -976,8 +1116,8 @@ footer p {
         align-content: center;
         justify-content: center;
         margin-bottom: 20px;
-        height: 100%;
-        background-color: aliceblue;
+        height: 90%;
+        background-color: #dcf2fc;
     }
 
 
@@ -1010,16 +1150,14 @@ footer p {
     .section-c {
         grid-template-columns: 1fr;
         height: 100%;
-
-    }
-
-
-
-
-    .section-c {
         width: 100%;
         height: 100%;
+
     }
+
+
+
+
 
     .section-p {
         width: 100%;
@@ -1040,30 +1178,41 @@ footer p {
         height: 500px;
         background: url('media/mobile_gif.gif');
         transform: translateY(-20px);
-        
-        
+
+
     }
-    
-    .section-a:before{
+
+    .section-a:before {
         content: "";
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         width: 100%;
         height: 500px;
         background-color: rgba(255, 255, 255, 0.7);
     }
-    
-    .section-a .container h1{
+
+    .section-a .container h1 {
         font-size: 30px;
-         padding-top: -20px;
+        padding-top: -20px;
     }
 
-    .spacer {
-        margin-bottom: 460px;
+   
+.spacer {
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+}
+
+
+
+    .container .section-c {
+        grid-gap: 150px;
     }
 
-
+    .container .section-c {
+        height: 165vh;
+        margin-bottom: 80px;
+    }
 
 
     .section-d {
